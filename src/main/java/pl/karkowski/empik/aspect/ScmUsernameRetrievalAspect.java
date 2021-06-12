@@ -23,7 +23,7 @@ public class ScmUsernameRetrievalAspect {
     }
 
     @AfterReturning(pointcut = "@annotation(IncrementCounter)", returning = "retVal")
-    public void afterReturn(final UserResponse retVal) throws Throwable {
+    public void afterReturn(final UserResponse retVal) {
         databaseService.incrementUserApiCounter(retVal.getLogin());
         LOGGER.info("Incremented api invocations for user {}", retVal.getLogin());
     }

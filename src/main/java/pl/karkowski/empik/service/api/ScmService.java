@@ -1,6 +1,5 @@
 package pl.karkowski.empik.service.api;
 
-import pl.karkowski.empik.dto.ScmUser;
 import pl.karkowski.empik.dto.UserResponse;
 
 /**

@@ -17,7 +17,6 @@ public class GithubController {
 
     private final ScmService scmService;
 
-
     public GithubController(final ScmService scmService) {
         this.scmService = scmService;
     }
